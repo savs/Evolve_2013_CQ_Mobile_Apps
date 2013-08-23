@@ -42,23 +42,81 @@
 					<h1>CQ Mobile Apps</h1>
 					<p>
 						<small><a href="http://www.andrewsavory.com/">Andrew Savory</a> / <a href="http://twitter.com/savs">@savs</a></small><br/>
-						<small>Bruce Lefebvre / <a href="http://twitter.com/brucelefebvre">@brucelefebvre</a></small><br/>
+						<small><a href="http://brucelefebvre.com/">Bruce Lefebvre</a> / <a href="http://twitter.com/brucelefebvre">@brucelefebvre</a></small><br/>
 					</p>
 					<p><br /><br /><br /><br /><br /><br /></p><!-- cheap positioning hack ... fix in CSS! -->
 				</section>
 
+				<!-- Introductions -->
 				<section>
 					<section>
 						<h2>Introductions</h2>
+						<!--
+							- Who we are and what we do
+							- Who the audience are:
+								- how many have a mobile site
+								- how many have a mobile app
+								- how many are planning a mobile app
+						-->
 					</section>
 				</section>
 
+				<!-- Mobile Challenges -->
 				<section>
 					<section>
-						<h2>Mobile app strategies</h2>
+						<img style="border: none" width="50%" src="images/mobile_tablet_noun_project_16427.svg" "Mobile and Tablet"/>
+						<aside class="notes">
+							Let's talk about mobile
+						</aside>
+					</section>
+					<section>
+						<h2>Mobile challenges</h2>
+						<!--
+							- Big investment in existing website
+								- Lots of content
+								- Editorial process (workflow for review)
+								- Lots of integrations
+							- Need to address mobile
+								- Mobile website is easy
+								- Mobile apps are hard
+							- Why are mobile apps hard?
+								- Content (without abandoning existing processes)
+								- Providing infrastructure (without abandoning existing integrations)
+									- script
+									- store
+									- scale
+								- Front-end development (cross-platform)
+							- Unique app problems:
+								- delivering experiences (sensors)
+								- connectivity
+								- performance / battery life
+								- updating content
+								-> apps done by agency, slow to get changes done, no control
+									-> INSERT screenshot of app store reviews
+
+							- Three key problems:
+								- Repurposing content and workflows from CQ -> newsreader
+								- Leveraging existing infrastructure to feed complex apps -> bluesky
+								- Empowering Marketing / Giving control back -> cq mobile
+						-->
 					</section>
 				</section>
 
+				<!-- App server platform -->
+				<section>
+					<section>
+						<h2>CQ Architecture</h2>
+						<!--
+							Reminder:
+								OSGi Framework
+								Java, JSP, JS
+								Content store
+								Scalable
+						-->
+					</section>
+				</section>
+
+				<!-- PhoneGap & PhoneGap Build -->
 				<section>
 					<section>
 						<h2>PhoneGap</h2>
@@ -129,19 +187,6 @@
 					</section>
 
 					<section>
-						<h2>Plugin support</h2>
-						<p class="fragment">
-							Only required capabilities are included
-						</p>
-						<p class="fragment">
-							Library of plugins are available
-						</p>
-						<p class="fragment">
-							... or roll your own.
-						</p>
-					</section>
-
-					<section>
 						<h2>Open source</h2>
 						<img src="images/cordova_bot.png" alt="Cordova bot logo" />
 						<aside class="notes">
@@ -151,14 +196,20 @@
 					</section>
 
 					<section>
-						<h2>Goals</h2>
-						<ul>
-							<li class="fragment">Web as a first class development platform</li>
-							<li class="fragment">To cease to exist</li>
-						</ul>
+						<h2>PhoneGap CLI</h2>
+						<h3>as of version 3.0</h3>
+						<!-- INSERT screenshot -->
 						<aside class="notes">
-							Motivation...<br>
+							Dev centric workflow<br>
+							build remotely
 						</aside>
+					</section>
+
+					<section>
+						<h2>In the real world</h2>
+					</section>
+					<section>
+						<img src="images/phonegap_ios.png" alt="PhoneGap apps in the iOS app store"/>
 					</section>
 
 					<section>
@@ -175,44 +226,122 @@
 						</aside>
 					</section>
 
-					<section>
-						<h2>PhoneGap CLI</h2>
-						<h3>as of version 3.0</h3>
-						<aside class="notes">
-							Dev centric workflow<br>
-							build remotely
-						</aside>
-					</section>
-
-					<section>
-						<h2>In the real world</h2>
-					</section>
-					<section>
-						<img src="images/phonegap_ios.png" alt="PhoneGap apps in the iOS app store"/>
-					</section>
 				</section>
 
+				<!-- Content Sync -->
 				<section>
 					<section>
 						<h2>Content Sync</h2>
+						<!--
+							- simplest possible, standards
+								- HTTP
+								- ZIP
+							- optimized for low bandwidth
+								- diffs
+								- one compressed file
+							- any type of content
+								- html/css/js
+								- xml, json, ...
+								- binaries
+						-->
 					</section>
 				</section>
 
+				<!-- Solutions -->
+				<!-- BlueSky -->
 				<section>
 					<section>
-						<h2>Scenario 1: Newsreader</h2>
+						<h2>Scenario: BlueSky</h2>
+						<!--
+							Problem: server architecture
+							Dynamic experience
+							Custom app
+
+							What it is:
+								Client app developed using PhoneGap, Angular.js
+								Server-side as JSPs emitting JSON
+								Hypermedia API
+
+							http://stackoverflow.com/questions/1164154/is-that-rest-api-really-rpc-roy-fielding-seems-to-think-so?rq=1
+
+							"Hypermedia APIs embrace the principles that make the web great: flexibility, standardization, and loose coupling to any given service." -- http://www.designinghypermediaapis.com/
+
+							http://2beards.net/2012/03/what-the-hell-is-a-hypermedia-api-and-why-should-i-care/
+
+							http://blog.steveklabnik.com/posts/2011-07-03-nobody-understands-rest-or-http
+
+							What to demo:
+
+								source?
+									- first json in CRXDE Lite
+									- android + ios + www
+
+								http://localhost:4503/content/geometrixx-outdoors/en/community.html
+								Mobile is about engagement - community
+								Desktop website not mobile-friendly
+								http://localhost:4503/content/geometrixx-outdoors-mobile/en.html
+								not engaging, no community!
+								Build around experience
+
+								Add location
+								Add journal entry
+									Add photo
+								Invite from contacts
+
+							Reinforce message about 3rd-party apps
+
+							Value to audience:
+								How to use CQ as app server
+								See how to interact with CQ via JSON
+
+						-->
 					</section>
 				</section>
 
+				<!-- Newsreader -->
 				<section>
 					<section>
-						<h2>Scenario 2: BlueSky</h2>
+						<h2>Scenario: Newsreader</h2>
+						<!--
+							Interlude: release notes
+
+							Problem: how to make use of PhoneGap Build?
+
+							Problem: repurpose content
+							Build apps across platforms
+
+							Scenario: similar content sites
+
+							What to demo:
+
+								PhoneGap Build connection
+									Empty PhoneGap Build list
+								
+								Geo Media Entertainment
+								Adding PhoneGap Build to page properties
+								PhoneGap app in CRXDE Lite
+								Triggering workflow
+								Installing app (audience too?)
+						-->
 					</section>
 				</section>
 
+				<!-- Fake summary -->
 				<section>
 					<section>
-						<h2>Scenario 3: CQ Mobile</h2>
+						<h2>Summary</h2>
+						<!--
+							Shown you how you can re-use existing content
+							How you can push a template app from CQ to PhoneGap Build
+							How you can use CQ as your app back-end platform
+						-->
+					</section>
+				</section>
+
+				<!-- Mobile -->
+				<section>
+					<section>
+						<h2>Scenario: CQ Mobile</h2>
 					</section>
 				</section>
 
@@ -222,13 +351,17 @@
 					</section>
 				</section>
 
-
+				<!-- Resources & References -->
 				<section>
 					<section>
 						<h2>Resources</h2>
 						<ul>
 							<li><a href="http://phonegap.com/2012/05/09/phonegap-beliefs-goals-and-philosophy/">PhoneGap Beliefs, Goals, and Philosophy</a> - Brian LeRoux</li>
 						</ul>
+					</section>
+					<section>
+						<h2>References</h2>
+						<!-- Noun project credits etc -->
 					</section>
 				</section>
 			</div>
