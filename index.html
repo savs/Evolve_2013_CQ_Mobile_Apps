@@ -41,10 +41,10 @@
 				<section data-state="bg first">
 					<h1>CQ Mobile Apps</h1>
 					<p>
+						<br />
 						<small><a href="http://www.andrewsavory.com/">Andrew Savory</a> / <a href="http://twitter.com/savs">@savs</a></small><br/>
 						<small><a href="http://brucelefebvre.com/">Bruce Lefebvre</a> / <a href="http://twitter.com/brucelefebvre">@brucelefebvre</a></small><br/>
 					</p>
-					<p><br /><br /><br /><br /><br /><br /></p><!-- cheap positioning hack ... fix in CSS! -->
 				</section>
 
 				<!-- Introductions -->
@@ -58,8 +58,9 @@
 					<section>
 						<h2>Andrew</h2>
 						<ul>
-							<li><a href="http://twitter.com/savs">@savs</a></li>
+							<li>Senior Technical Product Marketing Manager, Mobile</li>
 							<li>asavory@adobe.com</li>
+							<li><a href="http://twitter.com/savs">@savs</a></li>
 						</ul>
 					</section>
 					<section>
@@ -70,7 +71,7 @@
 						</ul>
 					</section>
 					<section>
-						<img style="border: none" width="50%" src="images/question speech.svg" "Questions"/>
+						<img style="border: none" width="50%" src="images/question bubble.svg" "Questions"/>
 						<aside class="notes">
 							<ul>
 								<li>Who the audience are</li>
@@ -87,7 +88,7 @@
 					<section>
 						<img style="border: none" width="50%" src="images/mobile_tablet_noun_project_16427.svg" "Mobile and Tablet"/>
 						<aside class="notes">
-							Let's talk about mobile
+							<p>Let's talk about mobile.</p>
 						</aside>
 					</section>
 					<section style="background-image: url('images/Map Pin Red.svg'); background-size: 10%; background-repeat: no-repeat; background-position: top right;">
@@ -99,7 +100,10 @@
 							<li>Lots of integrations</li>
 						</ul>
 						<aside class="notes">
-							<p>process = editorial processs; workflows for review</p>
+							<ul>
+								<li>process = editorial processes; workflows for review, defined roles/responsibilities</li>
+								<li>integration = ecommerce, crm, authentication/authorisation, enterprise data</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
@@ -116,28 +120,35 @@
 							<p>Mobile websites are easy because:</p>
 							<ul>
 								<li>live copy/multi-site manager</li>
-								<li>emulators and simulators</li>
 								<li>device groups and detection</li>
+								<li>emulators and simulators</li>
+								<li>responsive design and adaptive images</li>
 							</ul>
 						</aside>
 					</section>
 					<section>
 						<h2>Mobile apps are hard</h2>
+						<p>How do you:</p>
 						<ul>
-							<li>Using your content (without abandoning existing processes)</li>
-							<li>Providing back-end server infrastructure (without abandoning existing integrations)</li>
-							<li>Developing for mobile platforms (installing every SDK and writing in every programming language)</li>
+							<li>Re-use your content</li>
+							<li>Provide back-end server infrastructure</li>
+							<li>Develop for multiple mobile platforms</li>
 						</ul>
 						<aside class="notes">
-							<p>Back-end infrastructure: need to be able to script, store, scale</p>
+							<ul>
+								<li>Content: without abandoning existing processes</li>
+								<li>Infrastructure: without abandoning existing integrations, and scale</li>
+								<li>Platforms: without installing every SDK and learning every language</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
 						<h2>Mobile experiences are hard</h2>
+						<p>Unique challenges:</p>
 						<ul>
-							<li>unique functionality (touch, sensors)</li>
-							<li>unique constraints (memory, performance, battery, connectivity)</li>
-							<li>uniquely difficult to update</li>
+							<li>New functionality to use (touch, sensors)</li>
+							<li>Constraints (memory, performance, battery, connectivity)</li>
+							<li>Difficult to update</li>
 						</ul>
 						<aside class="notes">
 							<p>updates are tough:</p>
@@ -159,7 +170,7 @@
 						<ul>
 							<li>Repurposing content and workflows from CQ</li>
 							<li>Leveraging existing infrastructure to feed complex apps</li>
-							<li>Empowering Marketing / Giving control back</li>
+							<li>Empowering Marketing and giving control back</li>
 						</ul>
 					</section>
 				</section>
@@ -435,11 +446,21 @@
 						<!--
 							What to demo:
 
-								PhoneGap Build connection
-									Empty PhoneGap Build list
+								PhoneGap Build https://build.phonegap.com
+									Empty PhoneGap Build app list
+
+								Cloud Services http://localhost:4502/libs/cq/core/content/tools/cloudservices.html
+								Configure PhoneGap Build connection
+									Name "Evolve"
+									Enter credentials
+
+								Geo Media Entertainment http://localhost:4502/cf#/content/geometrixx-media/en/entertainment.html
+								Page properties
+									Add Service
+										PhoneGap Build
+
 								
-								Geo Media Entertainment
-								Adding PhoneGap Build to page properties
+
 								PhoneGap app in CRXDE Lite
 								Triggering workflow
 								Installing app (audience too?)
@@ -484,6 +505,7 @@
 						<h2>References</h2>
 						<!-- Noun project credits etc -->
 						<ul>
+							<li><a href="http://thenounproject.com/noun/question/#icon-No2185" target="_blank">Question</a> designed by <a href="http://thenounproject.com/anasr" target="_blank">Anas Ramadan</a> from The Noun Project</li>
 							<li>
 								<a href="http://thenounproject.com/noun/package/#icon-No3048" target="_blank">Package</a> designed by <a href="http://thenounproject.com/hakan" target="_blank">Hakan Yalcin</a> from The Noun Project
 							</li>
