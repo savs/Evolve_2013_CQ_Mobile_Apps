@@ -190,10 +190,13 @@
 							<li>Content store</li>
 							<li>Scalable</li>
 						</ul>
-
 						<aside class="notes">
-							Built on open source<br>
-							and web standards
+							<ul>
+								<li>OSGi great modular framework for bundles and applications</li>
+								<li>Common server-side languages supported</li>
+								<li>content store based on java content repository open standard</li>
+								<li>already trust it to deliver high-traffic websites</li>
+							</ul>
 						</aside>
 					</section>
 				</section>
@@ -313,11 +316,8 @@
 				<!-- Content Sync -->
 				<section>
 					<section>
-						<h2>Content Sync</h2>
-					</section>
-
-					<section>
 						<img style="width: 6em" src="images/noun_project_3048.svg" alt="Package" /><br>
+						<h2>Content Sync</h2>
 						<ul>
 							<li>Standards based</li>
 							<li>Optimized for low bandwidth</li>
@@ -329,10 +329,6 @@
 							content -> web content, images, xml, json, binaries ...
 						</aside>
 					</section>
-
-					<section>
-						<img src="images/contentsync_phonegap.png" alt="Content sync app workflow" />
-					</section>
 				</section>
 
 				<!-- Solutions -->
@@ -342,18 +338,23 @@
 						<h2>Scenario: BlueSky</h2>
 					</section>
 					<section>
-						<h2>The problem</h2>
+						<h2>The requirement</h2>
 						<ul>
-							<li class="fragment">Custom app</li>
-							<li class="fragment">Server architecture</li>
-							<li class="fragment">Dynamic experience</li>
+							<li class="fragment">Custom mobile application</li>
+							<li class="fragment">Re-use server architecture</li>
+							<li class="fragment">Deliver a dynamic experience</li>
 						</ul>
 						<aside class="notes">
 							<p>Builds: custom app; server; dynamic</p>
+							<ul>
+								<li>app: app store discoverability</li>
+								<li>server: keep investment, leverage desktop</li>
+								<li>dynamic: tailored to mobile, mobile features</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
-						<h2>What it is</h2>
+						<h2>What we built</h2>
 						<ul>
 							<li>Third-party client app</li>
 								<ul>
@@ -363,6 +364,11 @@
 							<li>Hypermedia API</li>
 						</ul>
 						<aside class="notes">
+							<ul>
+								<li>third-party; only interaction was thru API spec</li>
+								<li>server-side: re-use existing content; easy to develop with CQ skills</li>
+								<li>api: only known endpoint was the first one.</li>
+							</ul>
 							<!--
 
 							http://stackoverflow.com/questions/1164154/is-that-rest-api-really-rpc-roy-fielding-seems-to-think-so?rq=1
@@ -377,29 +383,54 @@
 					</section>
 					<section>
 						<h2>Demo</h2>
+					</section>
+					<section>
+						<img src="images/bluesky_geooutdoors_screen.png" alt="Geometrixx Outdoors desktop site" />
+						<aside class="notes">
+							<ul>
+								<li>Geometrixx Outdoors is a great demo ecommerce site</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src="images/bluesky_geooutdoors_communities_screen.png" alt="Geometrixx Outdoors Communities desktop site" />
+						<aside class="notes">
+							<ul>
+								<li>Geometrixx Outdoors has a communities section, demoing social communities</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src="images/bluesky_geooutdoors_community_screen.png" alt="Geometrixx Outdoors Community desktop site" />
+						<aside class="notes">
+							<ul>
+								<li>Communities are rich and engaging with a ton of content</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src="images/bluesky_geooutdoors_mobile_screen.png" alt="Geometrixx Outdoors mobile site" />
+						<aside class="notes">
+							<ul>
+								<li>... but large amount of content doesn't work well as a mobile experience, so it's not included in mobile site</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
 						<img src="images/bluesky_splashscreen.png" alt="BlueSky app splashscreen" />
 						<aside class="notes">
-							<!--
-							What to demo:
-
-								source?
-									- first json in CRXDE Lite
-									- android + ios + www
-
-								http://localhost:4503/content/geometrixx-outdoors/en/community.html
-								Mobile is about engagement - community
-								Desktop website not mobile-friendly
-								http://localhost:4503/content/geometrixx-outdoors-mobile/en.html
-								not engaging, no community!
-								Build around experience
-
-								Add location
-								Add journal entry
-									Add photo
-								Invite from contacts
-
-							Reinforce message about 3rd-party apps
-							-->
+							<ul>
+								<li>BlueSky app provides a community-centric mobile experience for Geo Outdoors</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<aside class="notes">
+							<ul>
+								<li>App - login, communities</li>
+								<li>Add new article - GPS, camera</li>
+								<li>Settings, invite - addressbook</li>
+							</ul>
 						</aside>
 					</section>
 					<section>
@@ -449,29 +480,21 @@
 					<section>
 						<h2>Demo</h2>
 						<img src="images/phonegap_build_config.png" alt="PhoneGap Build configuration screenshot" />
+					</section>
+					<section>
 						<aside class="notes">
-						<!--
-							What to demo:
-
-								PhoneGap Build https://build.phonegap.com
-									Empty PhoneGap Build app list
-
-								Cloud Services http://localhost:4502/libs/cq/core/content/tools/cloudservices.html
-								Configure PhoneGap Build connection
-									Name "Evolve"
-									Enter credentials
-
-								Geo Media Entertainment http://localhost:4502/cf#/content/geometrixx-media/en/entertainment.html
-								Page properties
-									Add Service
-										PhoneGap Build
-
-								
-
-								PhoneGap app in CRXDE Lite
-								Triggering workflow
-								Installing app (audience too?)
-						-->
+							<ul>
+								<li>PhoneGap Build and Empty PhoneGap Build app list</li>
+								<li>Cloud Services; Configure PhoneGap Build connection</li>
+								<li>PhoneGap app in CRXDE Lite WWW</li>
+								<li>Geo Media Entertainment; add build to properties</li>
+								<li>Triggering workflow</li>
+								<li>Installing, running app</li>
+							</ul>
+						</aside>
+					</section>
+					<section>
+						<img src="images/contentsync_phonegap.png" alt="Content sync app workflow" />
 					</section>
 				</section>
 
