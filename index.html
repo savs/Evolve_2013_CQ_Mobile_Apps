@@ -420,60 +420,122 @@
 						</aside>
 					</section>
 					<section>
-						<!-- This screen left blank for live demo background -->
+						<img src="images/bluesky_login_screen.png" alt="BlueSky login screen" />
+						<aside class="notes">
+							<p>Authentication using standard HTTP(s), login with normal CQ community login. Credentials cached in local phone storage.</p>
+						</aside>
+					</section>
+					<section>
+						<img src="images/bluesky_communities_screen.png" alt="BlueSky Communities screen" />
 						<aside class="notes">
 							<ul>
-								<li>App - login, communities</li>
-								<li>Add new article - GPS, camera</li>
-								<li>Settings, invite - addressbook</li>
+								<li>Same content</li>
+								<li>Formatted for mobile experience</li>
 							</ul>
 						</aside>
 					</section>
 					<section>
-						<img src="images/bluesky_login_screen.png" alt="BlueSky login screen" />
-					</section>
-					<section>
-						<img src="images/bluesky_communities_screen.png" alt="BlueSky Communities screen" />
-					</section>
-					<section>
 						<img src="images/bluesky_community.png" alt="BlueSky Community screen" />
+						<aside class="notes">
+							<ul>
+								<li>Content delivered as JSON</li>
+								<li>App has full control over rendering</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_community_members.png" alt="BlueSky community members" />
+						<aside class="notes">
+							<ul>
+								<li>Access most of desktop features</li>
+								<li>Formatted for mobile experience</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_comment.png" alt="BlueSky comment" />
+						<aside class="notes">
+							<ul>
+								<li>Drill down to content</li>
+								<li>Big buttons for mobile</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_map_location.png" alt="BlueSky map location" />
+						<aside class="notes">
+							<ul>
+								<li>Access to device functionality</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_add_article.png" alt="BlueSky add article" />
+						<aside class="notes">
+							<ul>
+								<li>Not just consuming content: add article</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
-						<img src="images/bluesky_add_article_text.png" alt="BlueSky add article preview" />
+						<img src="images/bluesky_add_article_text.png" alt="BlueSky add article text" />
+						<aside class="notes">
+							<ul>
+								<li>Lets you author content on mobile</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_add_article_preview.png" alt="BlueSky add article preview" />
+						<aside class="notes">
+							<ul>
+								<li>Preview adding content</li>
+								<li>Picks up my ID as you'd expect</li>
+								<li>Using device-specific features for add location and add picture</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_add_article_picture.png" alt="BlueSky add article picture" />
+						<aside class="notes">
+							<ul>
+								<li>Add picture gives you choice of gallery or camera</li>
+								<li>Access provided through PhoneGap, so no native code needs to be developed, just use JS API</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_settings.png" alt="BlueSky settings screen" />
+						<aside class="notes">
+							<ul>
+								<li>Gives access to config options</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_profile.png" alt="BlueSky profile screen" />
+						<aside class="notes">
+							<ul>
+								<li>Lets you view and edit your CQ profile</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_invite_contact.png" alt="BlueSky invite contact screen" />
+						<aside class="notes">
+							<ul>
+								<li>Accessing device-specific content</li>
+								<li>Access is through PhoneGap contacts API</li>
+								<li>Address book is customised mobile experience</li>
+							</ul>
+						</aside>
 					</section>
 
 					<section>
 						<h2>The value</h2>
 						<ul>
-							<li>Mobile experience, not mobile effort</li>
-							<li>CQ as app server leverages existing investment, common technologies</li>
+							<li>For users: mobile <em>experience</em>, not mobile <em>effort</em></li>
+							<li>Leverages existing CQ investment, common technologies</li>
 							<li>Loosely-coupled API provides flexibility, minimises pain</li>
 						</ul>
 					</section>
@@ -485,23 +547,26 @@
 						<h2>Scenario: Newsreader</h2>
 					</section>
 					<section>
-						<h2>The problem</h2>
+						<h2>The requirement</h2>
 						<ul>
 							<li class="fragment">Repurpose content</li>
 							<li class="fragment">Build apps across platforms</li>
-							<li class="fragment">Smooth workflow</li><!-- FIXME need a better 3rd -->
+							<li class="fragment">Retain workflow</li><!-- FIXME need a better 3rd -->
 						</ul>
 						<aside class="notes">
 							<p>Scenario: similar content sites</p>
 						</aside>
 					</section>
 					<section>
-						<h2>What it is</h2>
+						<h2>What we built</h2>
 						<ul>
 							<li>A PhoneGap app from CQ</li>
 							<li>ContentSync for content reuse</li>
 							<li>PhoneGap Build for cross-platform</li>
 						</ul>
+						<aside class="notes">
+							<p>"We" is Gabriel Walt and Cedric Huesler, who built this demo originally for Adobe Summit 2013.</p>
+						</aside>
 					</section>
 					<section>
 						<h2>Interlude</h2>
@@ -510,14 +575,21 @@
 					<section>
 						<img src="images/cq_mobile_release_notes.png" alt="Screenshot of CQ 5.6.1 release notes" />
 						<aside class="notes">
-							<p>Problem: how to make use of PhoneGap Build?</p>
+							<p>We introduced PhoneGap Build integration in 5.6.1 but didn't explain much about how to use it.</p>
+						</aside>
+					</section>
+					<section>
+						<img src="images/release_notes_phonegap_zoom.png" alt="Zoom of release notes" />
+						<p class="fragment"><em>&ldquo;Integration with Adobe <a href="https://build.phonegap.com/">PhoneGap Build</a> service<br />
+						to generate mobile apps from within Experience Manager&rdquo;</em></p><br />
+						<p class="fragment"><em>&ldquo;Enable more efficient developer workflow
+						<br/>to maintain and update content-driven mobile apps&rdquo;</em></p>
+						<aside class="notes">
+							<p>Build: release note text</p>
 						</aside>
 					</section>
 					<section>
 						<h2>Demo</h2>
-					</section>
-					<section>
-						<!-- This screen left blank for live demo background -->
 						<aside class="notes">
 							<ul>
 								<li>PhoneGap Build and Empty PhoneGap Build app list</li>
@@ -531,30 +603,65 @@
 					</section>
 					<section>
 						<img src="images/newsreader_geometrixx_media_screen.png" alt="Geometrixx Media Entertainment screen" />
+						<aside class="notes">
+							<p>Geometrixx Media Entertainment perfect target content for a newsreader application</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_phonegap_build_empty_screen.png" alt="PhoneGap Build list of apps" />
+						<aside class="notes">
+							<p>PhoneGap Build. Note only one app.</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_www_screen.png" alt="CRXDE Lite Geometrixx Media PhoneGap app" />
+						<aside class="notes">
+							<ul>
+								<li>Note phonegap-apps folder: hosting template app in CQ</li>
+								<li>www folder contains a complete phonegap app, consisting of html, css, js, and config.xml</li>
+								<li>you could have many of these template apps, each with the look and feel of the particular magazine or movie you were creating an app for</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/phonegap_build_config.png" alt="PhoneGap Build configuration screenshot" />
+						<aside class="notes">
+							<p>Start by configuring connection to PhoneGap Build in Cloud Services. In this case, connection "Evolve Demo".</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_geometrixx_media_cloud_screen.png" alt="Geometrixx Media properties PhoneGap config" />
+						<aside class="notes">
+							<p>Geometrixx Media Entertainment page properties, add cloud service "Evolve Demo"</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_geometrixx_media_workflow_screen.png" alt="Geometrixx Media trigger PhoneGap Build workflow" />
+						<aside class="notes">
+							<p>We can now trigger "PhoneGap Build" workflow. This will post our template app to PhoneGap Build.</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_geometrixx_media_workflow_subject_screen.png" alt="Geometrixx Media subject to workflow" />
+						<aside class="notes">
+							<p>Workflow status updates to reflect the app has been sent.</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_phonegap_build_newapp_screen.png" alt="PhoneGap Build new app" />
+						<aside class="notes">
+							<p>App now shows up in PhoneGap Build. Note:</p>
+							<ul>
+								<li>Built for (6) platforms out of the box</li>
+								<li>QR Code to scan and download for easy testing</li>
+							</ul>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_qr_scanner.png" alt="QR scanning PhoneGap Build site" />
+						<aside class="notes">
+							<p>Scan the QR code in an iPad, iPhone, Android</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/newsreader_install_app.png" alt="Installing PhoneGap Build newsreader" />
@@ -568,43 +675,69 @@
 				<section>
 					<section>
 						<h2>Summary</h2>
-						<!--
-							Shown you how you can re-use existing content
-							How you can push a template app from CQ to PhoneGap Build
-							How you can use CQ as your app back-end platform
-						-->
+						<ul>
+							<li>You can integrate mobile apps with CQ</li>
+							<li>You can re-use your content</li>
+							<li>You can re-use your workflows and integrations</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>With BlueSky we have shown how you can:</li>
+								<ul>
+									<li>use CQ as your app back-end platform</li>								
+									<li>re-use existing content</li>
+									<li>build mobile experiences</li>
+								</ul>
+								<li>With Newsreader we have shown how you can:</li>
+								<ul>
+									<li>re-use existing content</li>
+									<li>maintain workflows</li>
+									<li>push a template app from CQ to PhoneGap Build</li>
+								</ul>
+							</ul>
+						</aside>
 					</section>
 				</section>
 
 				<!-- Mobile -->
 				<section>
 					<section>
-						<h2>Scenario: CQ Mobile</h2>
+						<h2>One more thing</h2>
+						<h1>CQ Mobile</h1>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>Summary</h2>
+						<ul>
+							<li>Mobile websites are easy (with CQ)</li>
+							<li>Mobile apps are <strike>hard</strike> easy (with CQ)</li>
+						</ul>
 					</section>
 				</section>
 
 				<!-- Resources & References -->
 				<section>
 					<section>
-						<h2>Resources</h2>
-						<ul>
-							<li><a href="http://phonegap.com/2012/05/09/phonegap-beliefs-goals-and-philosophy/" target="_blank">PhoneGap Beliefs, Goals, and Philosophy</a> - Brian LeRoux</li>
-						</ul>
+						<h2>Thank You</h2>
+						<img style="border: none" width="30%" src="images/question speech.svg" alt="questions?"/>
+						<h2>Questions?</h2>
 					</section>
 					<section>
-						<h2>References</h2>
+						<h3>Resources</h3>
+						<ul>
+							<li><a href="http://phonegap.com/2012/05/09/phonegap-beliefs-goals-and-philosophy/" target="_blank">PhoneGap Beliefs, Goals, and Philosophy</a> - Brian LeRoux</li>
+							<li><a href="http://dev.day.com/docs/en/cq/current/developing/mobile/contentsync.html">Mobile with Content Sync</a></li>
+						</ul>
+						<h3>References</h3>
 						<!-- Noun project credits etc -->
 						<ul>
 							<li><a href="http://thenounproject.com/noun/question/#icon-No2185" target="_blank">Question</a> designed by <a href="http://thenounproject.com/anasr" target="_blank">Anas Ramadan</a> from The Noun Project</li>
 							<li>
 								<a href="http://thenounproject.com/noun/package/#icon-No3048" target="_blank">Package</a> designed by <a href="http://thenounproject.com/hakan" target="_blank">Hakan Yalcin</a> from The Noun Project
 							</li>
+							<li><a href="http://thenounproject.com/noun/question/#icon-No2036" target="_blank">Question</a> designed by <a href="http://thenounproject.com/henryryder" target="_blank">Henry Ryder</a> from The Noun Project</li>
 						</ul>
 					</section>
 				</section>
