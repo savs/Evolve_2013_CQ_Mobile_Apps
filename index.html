@@ -201,6 +201,7 @@
 								<li>content store based on java content repository open standard</li>
 								<li>already trust it to deliver high-traffic websites</li>
 							</ul>
+							<p>So Bruce, we have the server-side sorted. Do you have anything to help on the client side?</p>
 						</aside>
 					</section>
 				</section>
@@ -316,8 +317,9 @@
 						<h2>Content Sync</h2>
 						<aside class="notes">
 							<ul>
+								<li>Secret ingredient for getting client and server talking.</li>
 								<li>Documented since 5.4</li>
-								<li>Little-known mechanism for shipping content and updates from CQ to a client</li>
+								<li>For shipping content and updates from CQ to a client</li>
 								<li>Great for mobile apps because ...</li>
 							</ul>
 					</section>
@@ -334,6 +336,7 @@
 								<li>bandwidth -> delta update great for slow connections</li>
 								<li>content -> web content, images, xml, json, binaries ...</li>
 							</ul>
+							<p>With CQ as mobile server and PhoneGap for apps, what can we build?</p>
 						</aside>
 					</section>
 				</section>
@@ -347,14 +350,14 @@
 					<section>
 						<h2>The requirement</h2>
 						<ul>
-							<li class="fragment">Custom mobile application</li>
-							<li class="fragment">Re-use server architecture</li>
-							<li class="fragment">Deliver a dynamic experience</li>
+							<li>Custom mobile application</li>
+							<li>Re-use server architecture</li>
+							<li>Deliver a dynamic <em>mobile</em> experience</li>
 						</ul>
 						<aside class="notes">
 							<p>Builds: custom app; server; dynamic</p>
 							<ul>
-								<li>app: app store discoverability</li>
+								<li>app: show how we can make apps /app store discoverability / mobile stats (significant more time spent in apps than web)</li>
 								<li>server: keep investment, leverage desktop</li>
 								<li>dynamic: tailored to mobile, mobile features</li>
 							</ul>
@@ -372,9 +375,9 @@
 						</ul>
 						<aside class="notes">
 							<ul>
-								<li>third-party; only interaction was thru API spec</li>
+								<li>third-party; only interaction was thru API spec. Angular is js MVC framework</li>
 								<li>server-side: re-use existing content; easy to develop with CQ skills</li>
-								<li>api: only known endpoint was the first one. Flexible, standardised, loose coupling to service.</li>
+								<li>api: only known endpoint was the first one. Flexible, loose coupling to service.</li>
 							</ul>
 							<!--
 							"Hypermedia as the Engine of Application State" (HATEOAS)
@@ -391,6 +394,10 @@
 					</section>
 					<section>
 						<h2>Demo</h2>
+						<aside class="notes">
+							<p>Screenshots here for time, for network, and for offline use after conference.</p>
+							<p>Live demo also running locally and on mobile, happy to show after the talk.</p>
+						</aside>
 					</section>
 					<section>
 						<img src="images/bluesky_geooutdoors_screen.png" alt="Geometrixx Outdoors desktop site" />
@@ -551,6 +558,11 @@
 							<li>Leverages existing CQ investment, common technologies</li>
 							<li>Loosely-coupled API provides flexibility, minimises pain</li>
 						</ul>
+						<aside class="notes">
+							<p>Shown can build mobile app using phonegap that offers compelling experience accessing native device functionalities with JS through phonegap APIs.</p>
+							<p>Re-use CQ content, and CQ infrastructure investment by using CQ as back-end app server.</p>
+							<p>Let's bring in PhoneGap Build and Content Sync.</p>
+						</aside>
 					</section>
 				</section>
 
